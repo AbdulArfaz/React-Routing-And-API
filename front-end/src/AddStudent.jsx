@@ -12,7 +12,7 @@ function AddStudent(){
 
 
 const addStu = async () =>{
-    const url =`https://api.npoint.io/882f55005c1fac2beffb`;
+    const url =`https://my-json-server.typicode.com/AbdulArfaz/React-Routing-And-API/studentdata`;
     let response = await fetch (url,{
        method:'POST',
        body:JSON.stringify({rollNo,firstName,lastName,grade})

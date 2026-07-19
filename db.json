@@ -1,5 +1,5 @@
 {
-  "className": [
+  "studentdata": [
     {
       "rollNo": "5",
       "firstName": "Aditya",
@@ -70,6 +70,6 @@
       "grade": "8",
       "id": "h0gMJBl2Ras"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
+  
 }
