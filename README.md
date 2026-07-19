@@ -16,23 +16,22 @@ You can view the live deployed application here:
 
 ## 📂 Project Structure
 
-SMS REACT/
-├── .gitignore
-├── README.md              # Project overview & documentation
-└── front-end/             # Main React application workspace
-    ├── dist/              # Production build directory
-    ├── public/            # Static assets (favicons, icons)
-    └── src/               # Application source code
-        ├── assets/        # Global stylesheets and images
-        ├── App.css        # Global CSS styling
-        ├── App.jsx        # Root application component
-        ├── main.jsx       # Application entry point
-        ├── About.jsx      # About page component
-        ├── AddStudent.jsx # Add student component
-        ├── EditStu.jsx    # Edit student component
-        ├── Home.jsx       # Home page landing component
-        ├── Navbar.jsx     # Navigation bar component
-        └── StudentData.jsx# Student list database component
-
+* *SMS REACT/*
+    * .gitignore
+    * README.md  
+    * *front-end/*
+        * dist/
+        * public/
+        * *src/*
+            * assets/
+            * About.jsx
+            * AddStudent.jsx
+            * App.css
+            * App.jsx
+            * EditStu.jsx
+            * Home.jsx
+            * main.jsx
+            * Navbar.jsx
+            * StudentData.jsx
 
 
