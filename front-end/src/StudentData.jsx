@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { NavLink, useNavigate } from "react-router"
+import {toast} from 'react-hot-toast'
 
 
 export default function StudentData(){
@@ -32,8 +33,8 @@ let response = await fetch (url + "/"+id,{
     method:'delete'
 })
 let data = await response.json()
-if(data){
-    alert("Student Details deleted")
+if(response.ok && data){
+    toast.success('Student Deleted')
     getStudentData()
 }
 }

@@ -69,13 +69,6 @@
       "lastName": "Begum",
       "grade": "8",
       "id": "h0gMJBl2Ras"
-    },
-    {
-      "rollNo": "5",
-      "firstName": "sonu",
-      "lastName": "ahmed",
-      "grade": "7",
-      "id": "y_oVvabFN4w"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
