@@ -17,19 +17,19 @@ function EditStu(){
 
    const getStuData= async ()=>{
     const url = `https://my-json-server.typicode.com/AbdulArfaz/React-Routing-And-API/studentdata`
-    let response = await fetch (url)
+    let response = await fetch (url + "/" +id)
     let data = await response.json()
     console.log(data);
     
-    setRollno(data.rollNo)
-    setFirstName(data.firstName)
-    setLastName(data.lastName)
-    setGrade(data.grade)
+    setRollno(data.rollNo || '')
+    setFirstName(data.firstName || '')
+    setLastName(data.lastName || '')
+    setGrade(data.grade || '')
    }
  
    const updateStudentDetails = async ()=>{
     const url = `https://my-json-server.typicode.com/AbdulArfaz/React-Routing-And-API/studentdata`;
-    let response = await fetch (url,{
+    let response = await fetch (url + "/" +id,{
         method:'Put',
         body:JSON.stringify({rollNo,firstName,lastName,grade})
     })
