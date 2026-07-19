@@ -17,7 +17,7 @@ useEffect(() =>{
 
 
 const getStudentData= async()=>{
- const url=`https://6a5d2cc50ad09982aef6f06e.mockapi.io/api/v1/studentdata`
+ const url=`https://6a5d2cc50ad09982aef6f06e.mockapi.io/studentdata`
  let response = await fetch(url)
  let data = await response.json()
  getStudent(data)
@@ -28,7 +28,7 @@ const getStudentData= async()=>{
 
 const deleteButton = async (id) =>{
     
-const url = `https://6a5d2cc50ad09982aef6f06e.mockapi.io/api/v1/studentdata`
+const url = `https://6a5d2cc50ad09982aef6f06e.mockapi.io/studentdata`
 let response = await fetch (url + "/"+id,{
     method:'delete'
 })
