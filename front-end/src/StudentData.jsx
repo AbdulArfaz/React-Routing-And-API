@@ -17,7 +17,7 @@ useEffect(() =>{
 
 
 const getStudentData= async()=>{
- const url=`http://localhost:3000/className`
+ const url=`https://api.npoint.io/882f55005c1fac2beffb`
  let response = await fetch(url)
  let data = await response.json()
  getStudent(data)
@@ -28,7 +28,7 @@ const getStudentData= async()=>{
 
 const deleteButton = async (id) =>{
     
-const url = `http://localhost:3000/className`
+const url = `https://api.npoint.io/882f55005c1fac2beffb`
 let response = await fetch (url + "/"+id,{
     method:'delete'
 })

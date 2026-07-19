@@ -16,7 +16,7 @@ function EditStu(){
     },[])
 
    const getStuData= async ()=>{
-    const url = `http://localhost:3000/className/${id}`
+    const url = `https://api.npoint.io/882f55005c1fac2beffb`
     let response = await fetch (url)
     let data = await response.json()
     console.log(data);
@@ -28,7 +28,7 @@ function EditStu(){
    }
  
    const updateStudentDetails = async ()=>{
-    const url = `http://localhost:3000/className/${id}`;
+    const url = `https://api.npoint.io/882f55005c1fac2beffb`;
     let response = await fetch (url,{
         method:'Put',
         body:JSON.stringify({rollNo,firstName,lastName,grade})
