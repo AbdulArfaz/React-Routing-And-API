@@ -12,7 +12,7 @@ function AddStudent(){
 
 
 const addStu = async () =>{
-    const url =`https://6a5d2cc50ad09982aef6f06e.mockapi.io/:studentdata`;
+    const url =`https://6a5d2cc50ad09982aef6f06e.mockapi.io/api/v1/studentdata`;
     let response = await fetch (url,{
        method:'POST',
        body:JSON.stringify({rollNo,firstName,lastName,grade})

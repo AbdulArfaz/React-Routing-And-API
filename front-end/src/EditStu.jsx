@@ -16,7 +16,7 @@ function EditStu(){
     },[])
 
    const getStuData= async ()=>{
-    const url = `https://6a5d2cc50ad09982aef6f06e.mockapi.io/:studentdata`
+    const url = `https://6a5d2cc50ad09982aef6f06e.mockapi.io/api/v1/studentdata`
     let response = await fetch (url + "/" +id)
     let data = await response.json()
     console.log(data);
@@ -28,7 +28,7 @@ function EditStu(){
    }
  
    const updateStudentDetails = async ()=>{
-    const url = `https://6a5d2cc50ad09982aef6f06e.mockapi.io/:studentdata`;
+    const url = `https://6a5d2cc50ad09982aef6f06e.mockapi.io/api/v1/studentdata`;
     let response = await fetch (url + "/" +id,{
         method:'Put',
         body:JSON.stringify({rollNo,firstName,lastName,grade})
