@@ -12,7 +12,7 @@ function AddStudent(){
 
 
 const addStu = async () =>{
-    const url =`https://my-json-server.typicode.com/AbdulArfaz/React-Routing-And-API/studentdata`;
+    const url =`https://6a5d2cc50ad09982aef6f06e.mockapi.io/:studentdata`;
     let response = await fetch (url,{
        method:'POST',
        body:JSON.stringify({rollNo,firstName,lastName,grade})
