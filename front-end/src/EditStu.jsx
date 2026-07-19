@@ -30,7 +30,10 @@ function EditStu(){
    const updateStudentDetails = async ()=>{
     const url = `https://6a5d2cc50ad09982aef6f06e.mockapi.io/studentdata`;
     let response = await fetch (url + "/" +id,{
-        method:'Put',
+        method:'PUT',
+        headers: {
+            'Content-Type':'application/json'
+        },
         body:JSON.stringify({rollNo,firstName,lastName,grade})
     })
     let data = response.json()
