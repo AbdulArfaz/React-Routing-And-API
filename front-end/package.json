@@ -3,7 +3,7 @@
   "name": "front-end",
   "private": true,
   "version": "0.0.0",
-  "homepage" : "https://AbdulArfaz.github.io/React-Routing-And-API",
+  "homepage" : "https://AbdulArfaz.github.io/React-Routing-And-API/",
   "type": "module",
   "scripts": {
     "dev": "vite",
