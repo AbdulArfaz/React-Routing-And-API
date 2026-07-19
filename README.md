@@ -18,20 +18,20 @@ You can view the live deployed application here:
 
 * *SMS REACT/*
     * .gitignore
-    * README.md  
-    * *front-end/*
+    * README.md - Project overview & documentation
+    * *front-end/*  -Main React application workspace
         * dist/
         * public/
         * *src/*
             * assets/
-            * About.jsx
-            * AddStudent.jsx
-            * App.css
-            * App.jsx
-            * EditStu.jsx
-            * Home.jsx
-            * main.jsx
-            * Navbar.jsx
-            * StudentData.jsx
+            * About.jsx     - About page component
+            * AddStudent.jsx -Add Student component
+            * App.css  -Global css Styling
+            * App.jsx  -Root Application component
+            * EditStu.jsx -Edit Student component
+            * Home.jsx -Home page Component
+            * main.jsx -Application Entry point
+            * Navbar.jsx -Navigation bar component
+            * StudentData.jsx - Student list database component 
 
 
