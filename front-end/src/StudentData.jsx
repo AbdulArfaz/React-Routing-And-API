@@ -35,7 +35,7 @@ let response = await fetch (url + "/"+id,{
 let data = await response.json()
 if(response.ok && data){
     toast.success('Student Deleted')
-    getStudentData(prevStudents => prevStudents.filter(stu => stu.id !== id))
+    getStudent(prevStudents => prevStudents.filter(stu => stu.id !== id))
 }
 }
 
