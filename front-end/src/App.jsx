@@ -9,7 +9,7 @@ import AddStudent from "./AddStudent.jsx"
 import {Toaster} from 'react-hot-toast'
 
 function App() {
- 
+
 
   return (
    <div>
