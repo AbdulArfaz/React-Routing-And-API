@@ -1,6 +1,6 @@
 # Student Management System (SMS)
 
-A modern, responsive React-based Student Management System that allows users to seamlessly perform full CRUD operations (Create, Read, Update, Delete) on student records.
+A modern, responsive React-based Student & Teachers Management System that allows users to seamlessly perform full CRUD operations (Create, Read, Update, Delete) on student records.
 
 ## 🚀 Live Demo
 You can view the live deployed application here:
@@ -32,6 +32,8 @@ You can view the live deployed application here:
             * Home.jsx -Home page Component
             * main.jsx -Application Entry point
             * Navbar.jsx -Navigation bar component
-            * StudentData.jsx - Student list database component 
+            * StudentData.jsx - Student list database component
+            * TeachersData.jsx - Teachers list database component
+            * AddTeachers.jsx - Add Teachers component
 
 
