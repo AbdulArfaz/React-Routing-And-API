@@ -7,6 +7,9 @@ import Home from "./Home.jsx"
 import EditStu from "./EditStu.jsx"
 import AddStudent from "./AddStudent.jsx"
 import {Toaster} from 'react-hot-toast'
+import AddTeachers from "./AddTeachers.jsx"
+import TeachersData from "./TeachersData.jsx"
+
 
 function App() {
 
@@ -22,6 +25,9 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
+       <Route path="/addTeachers" element={<AddTeachers />} />
+    <Route path="/teachersdata" element={<TeachersData />} />
+     <Route path="/addStudent" element={<AddStudent />} />
       
       
       </Route>
@@ -29,7 +35,8 @@ function App() {
     <Route path="/studentdata" element={<StudentData />} />
     <Route path="/edit/:id" element={<EditStu />} />
     
-    <Route path="/addStudent" element={<AddStudent />} />
+   
+     
     
     </Routes>
    

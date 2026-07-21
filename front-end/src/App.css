@@ -91,7 +91,7 @@
 }
 
 
-
+/* add Student styling */
 .table-container{
     max-width:1000px;
     margin: 40px auto;
@@ -308,7 +308,7 @@ td:first-child{
 
 
 
-
+/*student data styling */
 
 .addstudent-div {
   max-width: 450px;
@@ -436,4 +436,246 @@ td:first-child{
   color: #666666 !important;
   cursor: not-allowed !important;
   opacity: 0.6;
+}
+
+
+/* //Add teachers styling */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.form-title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: #1f2937;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.alert-error {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.alert-success {
+  background-color: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+
+.teacher-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.submit-btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .form-card {
+    padding: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* //teachers data styling */
+
+.teachers-list-card {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+
+.teachers-list-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+
+.teachers-list-card table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+
+.teachers-list-card thead tr {
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+}
+
+.teachers-list-card th {
+  padding: 1rem 1.25rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+
+.teachers-list-card tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.teachers-list-card tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+
+.teachers-list-card tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+
+.teachers-list-card td {
+  padding: 1rem 1.25rem;
+  font-size: 0.925rem;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+
+.teachers-list-card tbody tr:last-child td {
+  border-bottom: none;
+}
+
+thead td {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  padding: 1rem 1.25rem;
+  text-align: left;
+}
+
+
+tbody td {
+  padding: 0.9rem 1.25rem;
+  color: #334155;
+  font-size: 0.925rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+
+tbody td button {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);
+}
+
+
+tbody td button:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+}
+
+tbody td button:active {
+  transform: translateY(0);
 }

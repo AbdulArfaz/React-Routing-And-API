@@ -12,6 +12,8 @@ function Navbar(){
            <NavLink to="/home" className="list"> <li>Home</li></NavLink>
            <NavLink to="/studentdata" className="list"><li>Students Data</li></NavLink>
            <NavLink to="/addStudent" className="list"><li>Add Student</li></NavLink>
+           <NavLink to="/addTeachers" className="list"><li>Add Teachers</li></NavLink>
+           <NavLink to="/teachersdata" className="list"><li>Teachers Data</li></NavLink>
            
            </ul>
                   
