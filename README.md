@@ -1,4 +1,4 @@
-# Student Management System (SMS)
+# Student & Teachers Management System (SMS)
 
 A modern, responsive React-based Student & Teachers Management System that allows users to seamlessly perform full CRUD operations (Create, Read, Update, Delete) on student records.
 
