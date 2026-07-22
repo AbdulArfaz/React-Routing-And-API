@@ -2,19 +2,19 @@
 
 A modern, responsive React-based Student & Teachers Management System that allows users to seamlessly perform full CRUD operations (Create, Read, Update, Delete) on student records.
 
-## 🚀 Live Demo
+##  Live Demo
 You can view the live deployed application here:
 👉 "https://abdularfaz.github.io/React-Routing-And-API/"
 
 
-## 🛠️ Tech Stack & Architecture
+##  Tech Stack & Architecture
 
 - *Frontend:* React.js, Vite, React Router, Custom CSS
 - *Notifications:* React Hot Toast
 - *Database/Backend:* MockAPI (Persistent Cloud REST API)
 - *Deployment:* GitHub Pages (Automated via GitHub Actions)
 
-## 📂 Project Structure
+##  Project Structure
 
 * *SMS REACT/*
     * .gitignore
