@@ -9,15 +9,13 @@ const[homepage,setHomePage]=useState(true)
         <div className="home-page-wrapper">
             <div className="card">
                 <nav className="nav-buttons">
-             <button onClick={()=>setHomePage(true)}>Home</button>
-             <button  onClick={()=>setHomePage(false)}>Student LogIn</button>
+             <button className={homepage ? "active" : ""} onClick={()=>setHomePage(true)}>Teacher Login</button>
+             <button className={!homepage ? "active" : ""} onClick={()=>setHomePage(false)}>Student Login</button>
              </nav>
 
              <div className="content-area">
              <Activity mode={homepage==true?'visible':'hidden'}>
-                <div className="home-message">
-                <p>Welcome to the Home Page</p>
-                </div>
+               <TeachersForm />
              </Activity>
 
              <Activity mode={homepage==false?'visible':'hidden'}>
@@ -28,6 +26,28 @@ const[homepage,setHomePage]=useState(true)
         </div>
     )
 }
+function TeachersForm(){
+    return(
+         <form className="form-container" onSubmit={(e) => e.preventDefault()}>
+      <h2>Teacher Login</h2>
+      
+      <div className="input-group">
+        <label>Teacher ID</label>
+        <input type="text" placeholder="Enter Teacher ID" />
+      </div>
+
+      <div className="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" />
+      </div>
+
+      <button type="submit" className="submit-btns">Login</button>
+    </form>
+    )
+}
+
+
+
 
 function StudentForm(){
     return(
