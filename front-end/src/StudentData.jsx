@@ -5,22 +5,22 @@ import {toast} from 'react-hot-toast'
 
 export default function StudentData(){
 
-const[student,getStudent]=useState([])
+const[student,setStudent]=useState([])
 const[loading,setLoading]=useState(false)
 const navigateToEdit = useNavigate()
 
 useEffect(() =>{
     setLoading(true)
-    getStudentData()
+    setStudentData()
 },[])
 
 
 
-const getStudentData= async()=>{
+const setStudentData= async()=>{
  const url=`https://6a5d2cc50ad09982aef6f06e.mockapi.io/studentdata`
  let response = await fetch(url)
  let data = await response.json()
- getStudent(data)
+ setStudent(data)
  setLoading(false)
 }
 
@@ -35,7 +35,7 @@ let response = await fetch (url + "/"+id,{
 let data = await response.json()
 if(response.ok && data){
     toast.success('Student Deleted')
-    getStudent(prevStudents => prevStudents.filter(stu => String(stu.id).trim() !== String(id).trim()))
+    setStudent(prevStudents => prevStudents.filter(stu => String(stu.id).trim() !== String(id).trim()))
 }
 }
 
