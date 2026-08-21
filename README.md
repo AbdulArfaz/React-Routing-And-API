@@ -4,7 +4,7 @@ A modern, responsive React-based Student & Teachers Management System that allow
 
 ##  Live Demo
 You can view the live deployed application here:
-👉 "https://abdularfaz.github.io/React-Routing-And-API/"
+👉 "https://abdularfaz.github.io/Student=and-Teachers-Management-System/"
 
 
 ##  Tech Stack & Architecture
